@@ -1,250 +1,190 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Loading...</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Premium HTML5 Website Template by freehtml5.co" />
-	<meta name="keywords" content="premium website templates, premium html5, premium template, premium bootstrap, premium website template, html5, css3, mobile first, responsive" />
-	<meta name="author" content="freehtml5.co" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="keywords" content="燕子雯">
+    <meta name="description" content="燕子雯">
+    <meta name="author" content="燕子雯">
+    <title>燕子雯个人介绍</title>
 
-  	<!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
-	<link href="https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou|Zhi+Mang+Xing&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/animate.css">
-	<link rel="stylesheet" href="css/icomoon.css">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/base.css" type="text/css">
+    <link rel="stylesheet" href="css/cv.css">
+    <!--[if lte IE 9]>
+    <script type="text/javascript">
+        // window.location = "./error.html"
+    </script>
+    <![endif]-->
 
-	<!-- Theme style  -->
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/my-style.css">
+</head>
 
+<body>
+        <div id="section2" class="section">
+            <!-- 导航条-->
+<div id="nav-bar" class="bar">
+    <div class="container">
+<div class="fl" style="color: black !important; font-size: larger !important;"><a href="#home">燕子雯</a></div>
+        <ul class="fr nav-ul">
+            <li><a href="#home">首页</a></li>
+            <li><a href="#profile">个人资料</a></li>
+            <li><a href="#interests">个人兴趣</a></li>
+            <li><a href="#life">生活记录</a></li>
+        </ul>
+        <div class="fr more-nav">
+            <img src="image/more.png" alt="更多">
+        </div>
+    </div>
+    <ul class="nav-ul nav-xs-ul">
+        <li><a href="#home">首页</a></li>
+        <li><a href="#profile">个人资料</a></li>
+        <li><a href="#interests">个人兴趣</a></li>
+        <li><a href="#life">生活记录</a></li>
+    </ul>
+</div>
+  <!-- 上部图片 -->
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr bgcolor="#4ED1F9">
+            <td align="center" valign="top" bgcolor="#4ED1F9">
+                <img src="images/978b-ketnnar1072790.jpg" width="1500" height="700" alt=""/>
+            </td>
+        </tr>
+    </table>
+<div id="home" style="background-color: #4ED1F9; text-align: center;">
+    <!-- 中部导航栏图片 -->
+    <div style="text-align: center; background-color: #4ED1F9;">
+        <img src="images/bt.png" width="847" height="80" alt=""/>
+    </div>
 
-	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
+    <!-- 下部内容区 -->
+    <div style="background-color: #4ED1F9; text-align: center;">
+        <div style="width: 95%; margin: 0 auto; display: flex; align-items: center; justify-content: center; height: 70vh;">
 
-	</head>
-	<body>
+            <!-- 左侧图片列 -->
+<div style="flex-basis: 50%; display: flex; flex-direction: column; justify-content: space-between;">
 
-	<div class="fh5co-loader"></div>
+    <!-- 第一行图片 -->
+    <div style="display: flex; justify-content: space-around;">
+        <img src="images/img_4.jpg" width="220" height="150" alt=""/>
+        <img src="images/zj03.jpg" width="220" height="150" alt=""/>
+    </div>
+    
+    <!-- 第二行图片 -->
+    <div style="display: flex; justify-content: space-around; margin-top: 20px;">
+        <img src="images/img_6.jpg" width="220" height="150" alt=""/>
+        <img src="images/OIP-C.jpg" width="220" height="150" alt=""/>
+    </div>
 
-	<div id="page">
-	<header id="fh5co-header" class="fh5co-cover js-fullheight" role="banner" style="background-image:url(images/cover_bg_3.jpg);" data-stellar-background-ratio="0.5">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center">
-					<div class="display-t js-fullheight">
-						<div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
-							<div :style="{backgroundImage: 'url(' + 头像地址 + ')'}" class="profile-thumb"></div>
-							<h1><span>{{姓名}}</span></h1>
-							<h3><span>{{职业}}</span></h3>
-							<p>
-								<ul class="fh5co-social-icons">
-									<li v-for="el in 联系方式">
-										<a :href="el.地址" v-if="el.类型==='instagram'" target="_blank"><i class="icon-instagram" ></i></a>
-										<a :href="el.地址" v-if="el.类型==='git'" target="_blank"><i class="icon-github" ></i></a>
-										<a :href="el.地址" v-if="el.类型==='微信'" target="_blank"><i class="icon-wechat" ></i></a>
-										<a :href="el.地址" v-if="el.类型==='微博'" target="_blank"><i class="icon-sina-weibo" ></i></a>
-										<a :href="'http://wpa.qq.com/msgrd?v=3&uin='+el.地址+'&site=qq&menu=yes'" v-if="el.类型==='qq'" target="_blank">
-											<i class="icon-qq" ></i>
-										</a>
-									</li>
-								</ul>
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>
+</div>
+            <!-- 右侧文字 -->
+            <div style="flex-basis: 50%; text-align: left; padding: 20px;">
+                <img src="images/tb_2.png" width="39" height="34" alt=""/>
+                <p style="text-indent: 2em; margin-top: 10px;">来自山西朔州，喜欢美食和摄影，爱好短跑，在班级里面担任宣委 为班级献计献策，为适应社会需要，我始终以提高自身能力为要求，树立正确的人生观，价值观，发挥自己的特长，挖掘自己的潜能。
+                </p>
+                <img src="images/tb_3.png" width="39" height="34" alt=""/>
+		<p style="text-indent: 2em; margin-top: 10px;"> 燕子雯，抗压能力强，对新事物保持好奇心，做事稳重，注意自我提升，不被外界影响，随机应变能力强，为人坦率，“海阔凭鱼跃，天高任鸟飞”，我需要一个广阔的空间来展示自己，同时我也希望能发挥自己的作用，在自己能力范围内做好每一件事情，做好本职工作，尽职尽责完成每一项任务。</p>
+            </div>
 
-	<div id="fh5co-about" class="animate-box">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>关&nbsp;&nbsp;/&nbsp;&nbsp;于&nbsp;&nbsp;/&nbsp;&nbsp;我</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4">
-					<ul class="info">
-						<li><span class="first-block">姓名:</span><span class="second-block">{{姓名}}</span></li>
-						<li><span class="first-block">号码:</span><span class="second-block">{{号码}}</span></li>
-						<li><span class="first-block">邮箱:</span><span class="second-block">{{邮箱}}</span></li>
-						<li><span class="first-block">个人网页:</span><span class="second-block">{{个人网页}}</span></li>
-						<li><span class="first-block">地址:</span><span class="second-block">{{地址}}</span></li>
-					</ul>
-				</div>
-				<div class="col-md-8">
-					<h2>{{关于我标题}}</h2>
-					<p>{{关于我内容}}</p>
-					<p>
-						<ul class="fh5co-social-icons">
-							<li v-for="el in 联系方式" style="margin-right:5px;border-radius:10px ">
-									<a :href="el.地址" v-if="el.类型==='instagram'" target="_blank"><i class="icon-instagram2" ></i></a>
-									<a :href="el.地址" v-if="el.类型==='git'" target="_blank"><i class="icon-github" ></i></a>
-									<a :href="el.地址" v-if="el.类型==='微信'" target="_blank"><i class="icon-wechat" ></i></a>
-									<a :href="el.地址" v-if="el.类型==='微博'" target="_blank"><i class="icon-sina-weibo" ></i></a>
-									<a :href="'http://wpa.qq.com/msgrd?v=3&uin='+el.地址+'&site=qq&menu=yes'" v-if="el.类型==='qq'" target="_blank">
-										<i class="icon-qq" ></i>
-									</a>
-							</li>
-						</ul>
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
+        </div>
+    </div>
+</div>
 
-	<div id="fh5co-resume" class="fh5co-bg-color">
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>我&nbsp;&nbsp;/&nbsp;&nbsp;的&nbsp;&nbsp;/&nbsp;&nbsp;简&nbsp;&nbsp;/&nbsp;&nbsp;历</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12 col-md-offset-0">
-					<ul class="timeline">
-						<li class="timeline-heading text-center animate-box">
-							<div><h3>工作经历</h3></div>
-						</li>
-						<li class="animate-box" v-for="(el,index) in 工作经历" :class="index%2===0?'timeline-unverted':'timeline-inverted'">
-							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">{{el.职业名称}}</h3>
-									<span class="company">{{el.公司名称}} - {{el.时间}}</span>
-								</div>
-								<div class="timeline-body">
-									<p>{{el.介绍}}</p>
-								</div>
-							</div>
-						</li>
-						<br>
-						<li class="timeline-heading text-center animate-box">
-							<div><h3>教育经历</h3></div>
-						</li>
-						<li class=" animate-box"  v-for="(el,index) in 教育经历" :class="index%2===0?'timeline-unverted':'timeline-inverted'">
-							<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">{{el.学段}}</h3>
-									<span class="company">{{el.学校名称}} - {{el.时间}}</span>
-								</div>
-								<div class="timeline-body">
-									<p>{{el.介绍}}</p>
-								</div>
-							</div>
-						</li>
-			    	</ul>
-				</div>
-			</div>
-		</div>
-	</div>
+<!-- 个人资料 -->
+<div id="profile" style="background-color: #4ED1F9; text-align: center;">
+    <!-- 中部导航栏图片 -->
+<div style="text-align: center; background-color: #4ED1F9;">
+        <img src="images/bt.png" width="847" height="80" alt=""/>
+    </div>
+    <!-- 下部内容区 -->
+    <div style="background-color: #4ED1F9; text-align: center;">
+        <div style="width: 95%; margin: 0 auto; display: flex; align-items: center; justify-content: center; height: 70vh;">
+
+            <!-- 左侧图片列 -->
+<div style="flex-basis: 50%; display: flex; flex-direction: column; justify-content: space-between;">
+
+    <!-- 第一行图片 -->
+    <div style="display: flex; justify-content: space-around;">
+        <img src="images/01.jpg" width="220" height="150" alt=""/>
+        <img src="images/02.jpg" width="220" height="150" alt=""/>
+    </div>
+    
+    <!-- 第二行图片 -->
+    <div style="display: flex; justify-content: space-around; margin-top: 20px;">
+        <img src="images/06.jpg" width="220" height="150" alt=""/>
+        <img src="images/05.jpg" width="220" height="150" alt=""/>
+    </div>
+
+</div>
+            <!-- 右侧文字 -->
+            <div style="flex-basis: 50%; text-align: left; padding: 20px;">
+                <img src="images/tb_2.png" width="39" height="34" alt=""/>
+                <p style="text-indent: 2em; margin-top: 10px;">来自山西朔州，喜欢美食和摄影，爱好短跑，在班级里面担任宣委 为班级献计献策，为适应社会需要，我始终以提高自身能力为要求，树立正确的人生观，价值观，发挥自己的特长，挖掘自己的潜能。
+                </p>
+            </div>
+
+        </div>
+    </div>
+</div>
 
 
-	<div id="fh5co-features" class="animate-box">
-		<div class="container">
-			<div class="services-padding">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-						<h2>我&nbsp;&nbsp;/&nbsp;&nbsp;的&nbsp;&nbsp;/&nbsp;&nbsp;能&nbsp;&nbsp;/&nbsp;&nbsp;力</h2>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-4 text-center" v-for="(el,index) in 我的能力">
-						<div class="feature-left" style="width:100%">
-							<span class="icon">
-								<i class="icon-paintbrush"></i>
-							</span>
-							<div class="feature-copy">
-								<h3>{{el.名称}}</h3>
-								<p>{{el.介绍}}</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+<!-- 个人兴趣-->
+<div id="interests" style="background-color: #4ED1F9; text-align: center;">
+    <!-- 中部导航栏图片 -->
+<div style="text-align: center; background-color: #4ED1F9;">
+        <img src="images/bt.png" width="847" height="80" alt=""/>
+    </div>
+            <div style="flex-basis: 50%; text-align: left; padding: 20px;">
+                <img src="images/tb_3.png" width="39" height="34" alt=""/>
+		<p style="text-indent: 2em; margin-top: 10px;"> 我对短跑有着浓厚的兴趣。每当我站在起跑线上，感受着风吹过脸颊，我的心跳就会加速，全身的血液都沸腾起来。短跑让我感受到了速度与激情的碰撞，让我充满了活力和斗志。
+ 
+我喜欢短跑的瞬间爆发力和快速冲刺的感觉。在短跑中，我追求的不仅是速度，还有对自我的挑战和突破。每一次的起跑、加速和冲线，都是对自己极限的挑战，让我不断超越自己。
+ 
+为了提高自己的短跑能力，我定期进行训练。我注重腿部力量的训练，通过深蹲、跳绳等练习来增强爆发力。同时，我也注重技巧的训练，如起跑姿势、步幅控制和呼吸调整等，以提高跑步的效率和稳定性。
+ 
+短跑不仅是一项运动，更是一种精神的追求。它让我学会了坚持、毅力和自律，培养了我的竞争意识和团队合作精神。无论在比赛中还是日常生活中，短跑都给予我无穷的动力和信心。
+ 
+我相信短跑会一直陪伴着我，成为我生活中的一部分。它不仅让我身体健康，更让我心态积极，享受着运动带来的快乐和成就感。我会继续努力训练，追求更快的速度和更好的成绩，同时也希望能够通过短跑，激励和感染身边的人，让他们加入到运动的行列中来。
+</p>
+ </div>
 
-	<div id="fh5co-skills" class="animate-box">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>我&nbsp;&nbsp;/&nbsp;&nbsp;的&nbsp;&nbsp;/&nbsp;&nbsp;技&nbsp;&nbsp;/&nbsp;&nbsp;能</h2>
-				</div>
-			</div>
-			<div class="row row-pb-md">
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center" v-for="el in 我的技能">
-					<div class="chart" :data-percent="el.进度"><span><strong>{{el.名称}}</strong>{{el.进度}}%</span></div>
-				</div>
-			</div>
-		</div>
-	</div>
+</div>
+<!-- 生活记录 -->
+<div id="life" style="background-color: #4ED1F9; text-align: center;">
+    <!-- 中部导航栏图片 -->
+<div style="text-align: center; background-color: #4ED1F9;">
+        <img src="images/bt.png" width="847" height="80" alt=""/>
+    </div>
 
-	<div id="fh5co-work" class="fh5co-bg-dark">
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>我&nbsp;&nbsp;/&nbsp;&nbsp;的&nbsp;&nbsp;/&nbsp;&nbsp;作&nbsp;&nbsp;/&nbsp;&nbsp;品</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-3 text-center col-padding animate-box" v-for="el in 我的作品">
-					<a :href="el.地址" class="work" :style="'background-image: url('+el.图片+');'">
-						<div class="desc">
-							<h3>{{el.名称}}</h3>
-							<span>{{el.简介}}</span>
-						</div>
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	</div>
 
-	<div class="gototop js-top">
-		<a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
-	</div>
+    <!-- 下部内容区 -->
+    <div style="background-color: #4ED1F9; text-align: center;">
+        <div style="width: 95%; margin: 0 auto; display: flex; align-items: center; justify-content: center; height: 70vh;">
 
-	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
-	<!-- Validate JS -->
-	<script src="js/jquery.validate.min.js"></script>
-	<!-- Stellar Parallax -->
-	<script src="js/jquery.stellar.min.js"></script>
-	<!-- Easy PieChart -->
-	<script src="js/jquery.easypiechart.min.js"></script>
+            <!-- 左侧图片列 -->
+<div style="flex-basis: 50%; display: flex; flex-direction: column; justify-content: space-between;">
 
-	<!-- Main -->
-	<script src="js/main.js"></script>
-	<!-- 配置相关 -->
-	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-	<script src="config.js"></script>
+    <!-- 第一行图片 -->
+    <div style="display: flex; justify-content: space-around;">
+        <img src="images/07.jpg" width="220" height="150" alt=""/>
+        <img src="images/10.jpg" width="220" height="150" alt=""/>
+    </div>
+    
+    <!-- 第二行图片 -->
+    <div style="display: flex; justify-content: space-around; margin-top: 20px;">
+        <img src="images/08.jpg" width="220" height="150" alt=""/>
+        <img src="images/11.jpg" width="220" height="150" alt=""/>
+    </div>
 
-	</body>
+</div>
+       </div>
+    </div>
+</div>
+
+</div>
+
+
+<script src="./js/jquery-1.11.1.min.js"></script>
+<script src="./js/mycv.js"></script>
+</body>
 </html>
-
